@@ -7,6 +7,7 @@ public enum Combination {
     PAIRE(3),
     DOUBLE_PAIRE(4),
     BRELAN(5),
+    SUITE(7),
     FULL(8),
     CARRÉ(10),
     YAM(20);

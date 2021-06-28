@@ -42,6 +42,10 @@ public class CombinationResolver {
             return PAIRE;
         }
 
+        if (roll.containsAll(Set.of(2,3,4,5))){ //on a 5 dice roll the only two possible combinations are 1,2,3,4,5 and 2,3,4,5,6 which are the only possible combinations containing this 2,3,4,5 and both contain it ... so ... that's that
+            return SUITE;
+        }
+
         return SIMPLE;
     }
 }

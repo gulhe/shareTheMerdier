@@ -13,6 +13,7 @@ Chaque combinaison vaut un nombre de point.
 - 2 dés identiques (paire) = 3 points
 - 2 fois 2 dés identiques (double paire) = 4 points
 - 3 dés identiques (brelan) = 5 points
+- 5 dés qui se suivent(suite) = 7 points
 - 1 brelan + 1 paire (full) = 8 points
 - 4 dés identiques (carré) = 10 points
 - 5 dés identiques (yam) = 20 points
