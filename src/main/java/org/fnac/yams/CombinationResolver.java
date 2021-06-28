@@ -1,8 +1,6 @@
 package org.fnac.yams;
 
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 
 import static org.fnac.yams.Combination.*;
@@ -27,9 +25,16 @@ public class CombinationResolver {
                 return YAM;
             case 4:
                 return CARRÉ;
-            case 3:
-                return BRELAN;
         }
+
+        if (new HashSet<>(faceCount.values()).equals(Set.of(2L, 3L))) {
+            return FULL;
+        }
+
+        if (max == 3) {
+            return BRELAN;
+        }
+
         if(faceCount.values().stream().filter(f->f==2L).count()==2L){
             return DOUBLE_PAIRE;
         }

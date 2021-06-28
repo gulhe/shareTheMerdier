@@ -15,5 +15,6 @@ Feature: Scoring system
       | paire        | 3     |
       | double-paire | 4     |
       | brelan       | 5     |
+      | full         | 8     |
       | carré        | 10    |
       | Yam          | 20    |
