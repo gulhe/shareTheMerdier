@@ -8,9 +8,10 @@ Feature: Combination determination
     Then it accounts for a <combination>
 
     Examples:
-      | roll          | combination |
-      | 4, 2, 1, 3, 6 | simple      |
-      | 2, 2, 1, 3, 5 | paire       |
-      | 2, 2, 2, 3, 5 | brelan      |
-      | 2, 2, 2, 2, 5 | carré       |
-      | 2, 2, 2, 2, 2 | yam         |
+      | roll          | combination  |
+      | 4, 2, 1, 3, 6 | simple       |
+      | 2, 2, 1, 3, 5 | paire        |
+      | 5, 5, 3, 3, 2 | double-paire |
+      | 2, 2, 2, 3, 5 | brelan       |
+      | 2, 2, 2, 2, 5 | carré        |
+      | 2, 2, 2, 2, 2 | yam          |

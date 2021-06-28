@@ -11,6 +11,7 @@ Chaque combinaison vaut un nombre de point.
 ### Score
 - aucune combinaison = 1 point
 - 2 dés identiques (paire) = 3 points
+- 2 fois 2 dés identiques (double paire) = 4 points
 - 3 dés identiques (brelan) = 5 points
 - 4 dés identiques (carré) = 10 points
 - 5 dés identiques (yam) = 20 points

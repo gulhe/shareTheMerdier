@@ -5,7 +5,6 @@ import cucumber.api.java.en.Then;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 import java.util.stream.Collectors;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -26,7 +25,7 @@ public class RollToCombinationSteps {
 
     @Then("^it accounts for a (.*)$")
     public void it_accounts_for_a_simple(String pCombination) {
-        Combination combination = Combination.valueOf(pCombination.toUpperCase(Locale.FRENCH));
+        Combination combination = Combination.fromFunctionalValue(pCombination);
         assertThat(COMBINATION_RESOLVER_SUT.bestCombination(heldRoll)).as("Score retourné par le système").isEqualTo(combination);
     }
 

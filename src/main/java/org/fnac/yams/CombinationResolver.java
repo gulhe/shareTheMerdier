@@ -9,13 +9,14 @@ import static org.fnac.yams.Combination.*;
 
 public class CombinationResolver {
     public Combination bestCombination(List<Integer> roll) {
-        Integer max = Math.toIntExact(roll
+        Map<Integer, Long> faceCount = roll
                 .stream()
                 .collect( //il y a plus simple mais entre toutes les galères là je le retrouve plus de tête alors je sors un truc qui marche mais sale désolé
                         Collectors.groupingBy(
                                 x -> x,
                                 Collectors.counting()
-                        ))
+                        ));
+        Integer max = Math.toIntExact(faceCount
                 .values()
                 .stream()
                 .max(Long::compare)
@@ -28,9 +29,14 @@ public class CombinationResolver {
                 return CARRÉ;
             case 3:
                 return BRELAN;
-            case 2:
-                return PAIRE;
         }
+        if(faceCount.values().stream().filter(f->f==2L).count()==2L){
+            return DOUBLE_PAIRE;
+        }
+        if (max == 2){
+            return PAIRE;
+        }
+
         return SIMPLE;
     }
 }

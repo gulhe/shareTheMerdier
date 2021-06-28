@@ -10,9 +10,10 @@ Feature: Scoring system
     Then it accounts for <score> points
 
     Examples:
-      | combination | score |
-      | simple      | 1       |
-      | paire       | 3       |
-      | brelan      | 5       |
-      | carré       | 10      |
-      | Yam         | 20      |
+      | combination  | score |
+      | simple       | 1     |
+      | paire        | 3     |
+      | double-paire | 4     |
+      | brelan       | 5     |
+      | carré        | 10    |
+      | Yam          | 20    |

@@ -2,8 +2,6 @@ package org.fnac.yams;
 
 import cucumber.api.java.en.*;
 
-import java.util.Locale;
-
 import static org.assertj.core.api.Assertions.*;
 
 public class CombinationToScoreSteps {
@@ -12,7 +10,7 @@ public class CombinationToScoreSteps {
 
     @Given("^a (.*) is scored$")
     public void a_combination_is_scored(String scored) {
-        heldCombination = Combination.valueOf(scored.toUpperCase(Locale.FRENCH));
+        heldCombination = Combination.fromFunctionalValue(scored);
     }
 
     @Then("^it accounts for (\\d+) points$")
