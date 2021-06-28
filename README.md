@@ -16,3 +16,6 @@ Chaque combinaison vaut un nombre de point.
 - 5 dés identiques (yam) = 20 points
 
 Pour plus de détail [aller directement à la spec](src/test/resources/org/fnac/yams/Score.feature "Gherkin rules").
+
+### Combinaisons
+Les combinaisons se déterminent assez naturellement mais [pour plus de détails voyez la spec directement](src/test/resources/org/fnac/yams/Combination.feature "Gherkin rules HARD").
